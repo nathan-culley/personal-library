@@ -1,0 +1,72 @@
+
+  /* Color Palette */
+  :root {
+    --main-color: #228B22;
+    --accent-1: #9ACD32;
+    --accent-2: #6B8E23;
+    --accent-3: #3C513A;
+  }
+
+  /* Form */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form label {
+    width: 45%;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  form input[type="text"] {
+    width: 45%;
+    padding: 5px;
+    border: 1px solid var(--accent-1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 45%;
+    margin-top: 10px;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th,
+  td {
+    border: 1px solid var(--accent-1);
+    padding: 10px;
+  }
+
+  th {
+    background-color: var(--accent-2);
+    font-weight: bold;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    form label,
+    form input[type="text"] {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    form input[type="submit"] {
+      margin-left: 0;
+    }
+  }
